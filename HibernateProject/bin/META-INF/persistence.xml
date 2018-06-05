@@ -1,0 +1,21 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+         version="2.0">
+	<persistence-unit name="test" transaction-type="RESOURCE_LOCAL">
+		<class>main.Ecole</class>
+		<class>main.Adresse</class>
+		<class>main.Enseignant</class>
+		
+		<properties>
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost:8889/TP7"/>
+			<property name="hibernate.connection.username" value="root"/>
+			<property name="hibernate.connection.password" value="root"/>
+			<property name="hibernate.connection.pool_size" value="10"/>
+			<property name="hibernate.temp.use_jdbc_metadata_defaults" value="false" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+			<property name="hibernate.id.new_generator_mappings" value="false" />
+		</properties>
+	</persistence-unit>
+</persistence>

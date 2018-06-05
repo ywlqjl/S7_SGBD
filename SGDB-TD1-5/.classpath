@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/Users/yanwenli/Documents/informatique/11_lien_SGDB/TD-TP/TD2SGBD/mysql-connector-java-5.1.44-bin.jar"/>
+	<classpathentry kind="lib" path="/Users/yanwenli/Documents/informatique/11_lien_SGDB/TD-TP/TD2SGBD/jcommon-1.0.17/jcommon-1.0.17-junit.jar"/>
+	<classpathentry kind="lib" path="/Users/yanwenli/Documents/informatique/11_lien_SGDB/TD-TP/TD2SGBD/jcommon-1.0.17/jcommon-1.0.17.jar"/>
+	<classpathentry kind="lib" path="/Users/yanwenli/Documents/informatique/11_lien_SGDB/TD-TP/TD2SGBD/jcommon-1.0.17/jcommon-xml-1.0.17.jar"/>
+	<classpathentry kind="lib" path="/Users/yanwenli/Documents/informatique/11_lien_SGDB/TD-TP/TD2SGBD/jfreechart-1.0.14/lib/jfreechart-1.0.14.jar"/>
+	<classpathentry kind="lib" path="/Users/yanwenli/Documents/informatique/11_lien_SGDB/TD-TP/TD2SGBD/jfreechart-1.0.14/lib/junit.jar"/>
+	<classpathentry kind="lib" path="/Users/yanwenli/Documents/informatique/11_lien_SGDB/TD-TP/TD2SGBD/jfreechart-1.0.14/lib/servlet.jar"/>
+	<classpathentry kind="lib" path="/Users/yanwenli/Documents/informatique/11_lien_SGDB/TD-TP/commons-io-2.5/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="/Users/yanwenli/Documents/informatique/11_lien_SGDB/TD-TP/commons-io-2.5/commons-io-2.5-javadoc.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

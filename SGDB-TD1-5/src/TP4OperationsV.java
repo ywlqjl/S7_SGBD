@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class TP4OperationsV {
 
 	static final String JDBC_DRIVER = "com.mysql.jdbc.driver";
-	static final String DB_URL = "jdbc:mysql://127.0.0.1:8889/SGBD-TP4";// ?autoReconnect=true&useSSL=false";
+	static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/SGBD-TP4";// ?autoReconnect=true&useSSL=false";
 	static final String USER = "root";
 	static final String PASS = "root";// my default password is root.
 	private static Scanner reader;

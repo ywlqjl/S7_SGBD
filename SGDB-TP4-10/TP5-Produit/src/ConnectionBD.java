@@ -30,7 +30,7 @@ public class ConnectionBD {
 		try
 		{
 			// Try to open the connection.
-			connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:8889/tp4project", "root", "root");
+			connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/SGBD-TD1a", "root", "root");
 		}
 		catch(SQLException e)
 		{

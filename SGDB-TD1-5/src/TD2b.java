@@ -16,7 +16,7 @@ import org.jfree.data.general.DefaultPieDataset;
 public class TD2b {
 
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://127.0.0.1:8889/SGBD-TD2b";
+	static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/SGBD-TD2b";
 
 	static final String USER = "root";
 	static final String PASS = "root";
@@ -37,7 +37,7 @@ public class TD2b {
 			System.out.println("Creating tables in given database...");
 			stmt = conn.createStatement();
 
-	/*		String NoteFiche = "CREATE TABLE NoteFiche "
+			String NoteFiche = "CREATE TABLE NoteFiche "
 					+ "(Code INTEGER not NULL PRIMARY KEY , "
 					+ " Nom VARCHAR(255), " 
 					+ " Metier VARCHAR(255)," 
@@ -45,11 +45,11 @@ public class TD2b {
 					+ " Note INTEGER) ";
 
 			stmt.executeUpdate(NoteFiche);
-			
-	*/		
+			System.out.println("Created tables in given database...");
+		
 
 // =========== Insert records into the table =====================================================================//
-/*
+
 			System.out.println("Inserting records into the table...");
 			// reuse AddData
 			String AddData = "INSERT INTO NoteFiche " + " VALUES (001, 'Apple', 'Math', 'A',18) ";
@@ -76,7 +76,7 @@ public class TD2b {
 			
 			System.out.println("Insert data successfully...");
 		
-	*/		
+			
 // =========== a. Show the graph of the report by JFreeChart =================================================================//
 
 			int i = 0;
@@ -84,13 +84,6 @@ public class TD2b {
 			String calcul = "SELECT Level, count(Level) AS nombre   FROM NoteFiche WHERE Metier = 'Math'  GROUP BY Level";
 			PreparedStatement infoISBN = conn.prepareStatement(calcul);
 			ResultSet rs = infoISBN.executeQuery();
-			
-	/*		while (rs.next()) {
-	            String Level = rs.getString("Level");
-	            int Nom = rs.getInt("nombre");
-	            System.out.println(Level+ "\t\t" + Nom );	  
-			}
-		*/	
 			
 			
 			while (rs.next()) {
@@ -120,7 +113,7 @@ public class TD2b {
 	        chartFrame.setVisible(true);//图形是否可见 if we can see the image
 	      
 	        
-			System.out.println("Created tables in given database...");
+			
 			
 		} catch (SQLException se) {
 			// Handle errors for JDBC
